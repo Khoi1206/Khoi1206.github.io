@@ -510,7 +510,7 @@ h3.my-profession{
     background-color: var(--bg-black-900);
 }
 
-.about .about-content .education,
+/* .about .about-content .education,
 .about .about-content .experience{
     flex: 0 0 50%;
     max-width: 50%;
@@ -592,15 +592,98 @@ h3.my-profession{
     font-size: 16px;
     text-align: justify;
     color: var(--text-black-700);
-}
+} */
 
 /* soft skill */
 .soft-skill .container{
     padding-bottom: 40px;
 }
 
+.soft-skill .education,
+.soft-skill .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
 
-.soft-skill .soft-skill-item {
+.soft-skill h3.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+
+.soft-skill .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.soft-skill .timeline{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.soft-skill .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.soft-skill .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+
+.soft-skill .timeline .timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+
+.soft-skill .timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: var(--skin-color);
+}
+
+.soft-skill .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+
+.soft-skill .timeline .timeline-date .fa{
+    margin-right: 5px;
+}
+
+.soft-skill .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.soft-skill .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
+
+/* .soft-skill .soft-skill-item {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
@@ -657,7 +740,7 @@ h3.my-profession{
     font-size: 16px;
     color: var(--text-black-700);
     line-height: 25px;
-}
+} */
 /* portfolio */
 .portfolio .container{
     padding-bottom: 40px;
@@ -684,6 +767,7 @@ h3.my-profession{
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
+    background-color: var(--bg-black-100);
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img{
@@ -697,7 +781,124 @@ h3.my-profession{
     line-height: 25px;
     color: var(--text-black-700);
     background-color: var(--bg-black-100);
+}
 
+/* // */
+
+.portfolio .portfolio-item-inner .item-inner{
+    background-color: var(--bg-black-100);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    position: relative;
+    left: 270px;
+}
+
+.portfolio .portfolio-item-inner .item-inner .fa{
+    height: auto;
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    margin: auto 0;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item-inner .item-inner a .fa{
+    font-size: 35px;
+    line-height: 40px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item-inner .item-inner:hover .fa{
+    background: var(--skin-color);
+}
+
+.portfolio .portfolio-item-inner .item-inner:hover .fa{
+    font-size: 25px;
+    color: #ffffff;
+}
+
+/* activities */
+
+.activities .container{
+    padding-bottom: 40px;
+}
+
+.activities .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 25px;
+}
+
+.activities .timeline{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+
+.activities .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+
+.activities .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+
+.activities .timeline .timeline-item::before{
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+
+.activities .timeline .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background-color: var(--skin-color);
+}
+
+.activities .timeline .timeline-date{
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+
+.activities .timeline .timeline-date .fa{
+    margin-right: 5px;
+}
+
+.activities .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.activities .timeline .timeline-title .fa{
+    margin-left: 15px;
+    color: var(--text-black-900);
+}
+
+.activities .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
 }
 /* contact */
 .contact-title{
@@ -849,8 +1050,10 @@ h3.my-profession{
     .contact .contact-info-item,
     .portfolio .portfolio-item,
     .soft-skill .soft-skill-item,
-    .about .about-content .experience,
-    .about .about-content .education,
+    .soft-skill .experience,
+    .soft-skill .education,
+    /* .about .about-content .experience,
+    .about .about-content .education, */
     .about .about-content .skills,
     .about .about-content .personal-info{
         flex: 0 0 100%;
