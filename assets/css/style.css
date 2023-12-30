@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Poppins:wght@200;300;400;500;600;700&family=Quando&family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&family=Poppins:wght@200;300;400;500;600;700&display=swap');
 :root{
     --bg-black-900:#f2f2fc;
     --bg-black-100:#fdf9ff;
@@ -189,7 +189,7 @@ ul{
 }
 
 .aside .logo a span{
-    font-family: 'Clicker Script', cursive;
+    font-family: 'Carattere', cursive;
     font-size: 40px;
 }
 
@@ -317,7 +317,7 @@ h3.hello{
 }
 
 h3.hello span{
-    font-family: 'Clicker Script', cursive;
+    font-family: 'Carattere', cursive;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
