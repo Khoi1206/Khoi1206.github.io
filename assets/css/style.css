@@ -817,6 +817,28 @@ h3.my-profession{
     font-size: 24px;
     color: #ffffff;
 }
+/* certification */
+
+.certification .certification-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+
+.certification .certification-item-inner{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    background-color: var(--bg-black-100);
+}
+
+.certification .certification-item-inner .certification-img img{
+    width: 100%;
+    display: block;
+    border: 6px solid var(--bg-black-100);
+}
+
 
 /* activities */
 
